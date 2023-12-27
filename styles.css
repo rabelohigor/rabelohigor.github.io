@@ -1,0 +1,221 @@
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+overflow-x: hidden;
+}
+
+/* CABEÇALHO E RODAPÉ GERAL */
+header, footer {
+width: 100vw; /* Define a largura como a largura total da janela do navegador */
+box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+header {
+background-color: #333;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 1;
+}
+
+.logo {
+display: flex;
+align-items: center;
+z-index: 2;
+}
+
+.logo a i {
+font-size: 24px;
+color: white;
+margin-right: 10px;
+}
+
+.logo a i.fab.fa-whatsapp {
+font-size: 24px;
+color: white;
+margin-right: 10px;
+}
+
+.nome {
+font-size: 24px;
+color: white;
+margin-right: 10px;
+}
+
+nav {
+display: flex;
+z-index: 2;
+}
+
+nav a {
+color: #ffffff;
+text-decoration: none;
+margin: 0 15px;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    }
+    
+    footer a {
+    color: white;
+    margin: 0 8px;
+    text-decoration: none;
+    }
+    
+    .footer-left, .footer-right {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 0 8px;
+    }
+    
+    .footer-left span, .footer-right span {
+    margin: 0 8px;
+    white-space: nowrap;
+    }
+    
+    .footer-icons a i {
+    font-size: 0.9em; /* Tamanho dos ícones */
+    color: white;
+    margin: 0 8px;
+    flex-shrink: 0;
+    }
+/* ------------------------------------- */
+
+/* PÁGINA INICIAL */
+.cta {
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    z-index: 2;
+    background: url('/imagens/higor.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0; /* Remove margens adicionais */
+    width: 100%; /* Garante que ocupa toda a largura */
+    }
+    
+    /* Media queries para responsividade */
+    @media (max-width: 768px) {
+    .cta h1 {
+    font-size: 3em; /* Tamanho menor para telas pequenas */
+    }
+    .cta button {
+    font-size: 1em; /* Tamanho menor para botão */
+    }
+    /* Outros estilos para dispositivos menores */
+    }
+    
+    @media (max-width: 480px) {
+    /* Estilos específicos para dispositivos muito pequenos, como celulares */
+    }
+    
+    .cta h1 {
+    font-size: 5.0em;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+    }
+    
+    .cta button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: 2 px solid #0000;
+    cursor: pointer;
+    font-weight: bold;
+    }
+    
+    .carousel {
+    margin: 20px;
+    text-align: center;
+    overflow: hidden;
+    }
+    
+    .carousel img {
+    max-width: 100%;
+    max-height: 300px;
+    margin-right: 10px;
+    }
+    
+    .carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+/* --------------------------------------- */
+
+/* PÁGINA SOBRE MIM */ 
+
+.carreira {
+    background: url('imagens/carreira/visao-holistica.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0; /* Remove margens adicionais */
+    width: 100%; /* Garante que ocupa toda a largura */
+    text-align: center;
+    padding: 20px;
+}
+
+.carreira-text {
+    color: #ffffff; /* Cor do texto */
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px black;
+}
+
+.carreira-text h1, .carreira-text p {
+    -webkit-text-stroke: 1px black; /* Contorno preto fino para o texto */
+}
+
+.carreira-text h1 {
+    font-size: 5em; /* Tamanho grande para o título */
+}
+
+.carreira-text p {
+    font-size: 1.2em; /* Tamanho confortável para a leitura */
+    line-height: 1.4; /* Espaçamento entre linhas */
+    background-color: rgba(0, 0, 0, 0.75); /* Preto com 50% de transparência */
+}
+
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px; /* Espaçamento entre os botões */
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px #0056b3; /* Sombra para efeito 3D */
+    transition: all 0.3s ease; /* Transição suave para o hover */
+}
+  
+  .botao:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 2px #003366; /* Sombra ao passar o mouse */
+    transform: translateY(2px); /* Efeito de pressionamento */
+}
+
+/* ------------------------------------------------- */
+
+
+
+
+
+  

@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-
   <header>
     <div class="logo">
       <!-- Adicione os ícones/link para suas redes sociais aqui -->
@@ -25,57 +24,39 @@
       <a href="https://wa.me/5527995902401?text=Ol%C3%A1%2C%20prof.%20Higor%20Rabelo%21" target="_blank" title="Enviar mensagem no WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
     <div class="nome">
-      Prof. Higor Rabelo
+      Higor Rabelo
     </div>
     <nav>
     <!--<a href="#portfolio">Portfólio</a>-->
+    <a href="index.html">Início</a>
     <a href="/sobre-mim.html">Sobre mim</a>
     <a href="http://rationalbingo.rabelohigor.com.br/" target="_blank">Bingo Racional</a>
     </nav>
   </header>
 
-  <section class="cta">
-    <h1>Aulas particulares de matemática</h1>
-    <button onclick="window.location.href='https://wa.me/5527995902401?text=Quero%20contratar%20aula%20particular%20de%20matem%C3%A1tica%20com%20o%20prof.%20Higor%20Rabelo!'">Agendar 1ª aula GRATUITA</button>
-  </section>
-
-  <section class="carousel">
-    <div class="carousel-slide">
-      <img src="/imagens/referencias/luiza.png" alt="Avaliação da Luiza: Professor Higor foi a melhor escolha que fizemos, união de jogos, explicações feitas com calma, técnica e gentileza. Meu filho adorou e estamos felizes por te-lo como apoio para aulas de reforço/aprendizado no geral.">
-      <img src="/imagens/referencias/sergio.png" alt="Avaliação do Sergio: Um excelente professor, muito focado, super atencioso, extremamente didático e interativo, muito criativo, tenta lhe ensinar de várias maneiras e se preocupa demais com o desenvolvimento e o nivel de aprendizado na aula e com o aluno, seu método de ensino me ajuda demais a querer aprender. Aula nota 1000!">
-      <img src="/imagens/referencias/daniele.png" alt="Avaliação da Daniele: Prof excelente, extremamente atencioso, inteligente e divertido! Obrigada pela atenção!">
-      <img src="/imagens/referencias/gustavo.png" alt="Avalição do Gustavo: Ótimo professor! Didática direta, clara e excepcional.">
-      <img src="/imagens/referencias/gabriela.png" alt="Avaliação da Gabriela: Didática muito boa, explica na velocidade do aluno e tem paciência.">
+  <!-- Introdução -->
+  <div class="carreira">
+    <div class="carreira-text"> 
+      <h1>Carreira</h1>
+      <p>Estudei e trabalhei em diferentes áreas ao longo da vida, me posicionando como um profissional T-shaped com notáveis habilidades generalistas e específicas. Além de desenvolver uma visão holística do mundo, essa jornada me capacitou para uma abordagem mais completa, criativa e empática para resolução de problemas complexos.</p>
+      <p>Conheça um pouco mais e veja os meus resultados em cada uma dessas áreas.</p>
     </div>
-  
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const images = document.querySelectorAll(".carousel-slide img");
-        let counter = 0;
-    
-        // Esconde todas as imagens exceto a primeira
-        images.forEach((img, index) => {
-          if (index !== 0) img.style.display = "none";
-        });
-    
-        function changeImage() {
-          images[counter].style.display = "none"; // Esconde a imagem atual
-          counter = (counter + 1) % images.length; // Move para a próxima imagem
-          images[counter].style.display = "block"; // Exibe a próxima imagem
-        }
-    
-        setInterval(changeImage, 10000); // Muda a imagem a cada 10000 milissegundos (10 segundos)
-      });
-    </script>
-
-  </section>
+    <div>
+      <!-- Botões -->
+      <a href="/empreendedorismo.html" class="botao">Empreendedorismo</a>
+      <a href="/engenharia.html" class="botao">Engenharia</a>
+      <a href="/educacao.html" class="botao">Educação</a>
+      <a href="/programacao.html" class="botao">Programação</a>
+    </div>
+  </div>
+  <!-- Adicione scripts adicionais para o seu carrossel aqui (se necessário) -->
 
   <footer>
     <div class="footer-left">
       <span>Engenheiro</span>
       <span>Professor</span>
       <span>Programador</span>
-  </div>
+    </div>
     <div class="footer-icons">
         <!-- Ícones Aqui -->
         <a href="https://www.linkedin.com/in/higorrabelo/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -88,10 +69,8 @@
       <span>Google Coach</span>
       <span>Google Trainer</span>
       <span>Apple Teacher</span>
-  </div>
-</footer>
+    </div>
+  </footer>
 
 </body>
 </html>
-
-
