@@ -3,6 +3,7 @@ body {
 margin: 0;
 font-family: Arial, sans-serif;
 overflow-x: hidden;
+padding-top: 60 px;
 }
 
 /* CABEÇALHO E RODAPÉ GERAL */
@@ -18,6 +19,10 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 z-index: 1;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
 }
 
 .logo {
@@ -156,9 +161,65 @@ footer {
     justify-content: center;
     align-items: center;
     }
+
+    .carousel-text {
+        color: #000000; /* Cor do texto */
+        margin: 20px auto;
+        text-align: center;
+        font-weight: bold;
+    }
 /* --------------------------------------- */
 
-/* PÁGINA SOBRE MIM */ 
+
+/* SEÇÃO SOBRE MIM */
+
+.sobre-mim-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d44b8;
+    color: #ffffff;
+    padding: 20 px;
+    background-size: cover;
+    margin-left: 0;
+  }
+  
+  .sobre-imagem {
+    flex: 0 1 40%;  /* Cada um ocupa metade do espaço */
+  }
+
+  .sobre-texto {
+    flex: 1;
+    max-width: 600 px;
+    padding: 10px 30px 10px 10px;
+    margin: 0 20px 0 0;
+  }
+  
+  .sobre-imagem img {
+    max-width: 100%;  /* Faz a imagem se ajustar à sua div */
+    height: auto;  /* Mantém a proporção da imagem */
+  }
+
+  .sobre-texto h1 {
+    font-size: 5em;
+  }
+
+  .sobre-texto p {
+    font-size: 1.2em; /* Tamanho confortável para a leitura */
+    line-height: 1.4; /* Espaçamento entre linhas */
+    text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .sobre-mim-container {
+      flex-direction: column;
+    }
+  }
+  
+/* --------------------------------------- */
+
+/* SEÇÃO CARREIRA */ 
 
 .carreira {
     background: url('imagens/carreira/visao-holistica.jpg') no-repeat center center fixed;
@@ -172,8 +233,8 @@ footer {
 
 .carreira-text {
     color: #ffffff; /* Cor do texto */
-    padding: 20px;
-    margin: 20px auto;
+    padding: 20px 40px 20px 20px;
+    margin: 20px 40px 20px 20px;
     text-align: center;
     font-weight: bold;
     text-shadow: 1px 1px 0px black;
