@@ -143,9 +143,28 @@ footer {
     cursor: pointer;
     font-weight: bold;
     }
+
+    .botao-cta {
+      display: inline-block;
+      padding: 10px 20px;
+      width: 440px;
+      margin-top: 250px;
+      margin-left: 100px;
+      background-color: #007bff; /* Cor de fundo */
+      color: white; /* Cor do texto */
+      text-decoration: none; /* Remove o sublinhado */
+      border-radius: 5px; /* Bordas arredondadas */
+      box-shadow: 0 4px #0056b3; /* Sombra para efeito 3D */
+      transition: all 0.3s ease; /* Transição suave para o hover */
+  }
+    
+    .botao-cta:hover {
+      background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+      box-shadow: 0 2px #003366; /* Sombra ao passar o mouse */
+      transform: translateY(2px); /* Efeito de pressionamento */
+  }
     
     .carousel {
-    margin: 20px;
     text-align: center;
     overflow: hidden;
     }
@@ -163,10 +182,10 @@ footer {
     }
 
     .carousel-text {
-        color: #000000; /* Cor do texto */
-        margin: 20px auto;
+        color: #007bff; /* Cor do texto */
         text-align: center;
         font-weight: bold;
+        font-size: 2.5em;
     }
 /* --------------------------------------- */
 
@@ -178,7 +197,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1d44b8;
+    background-color: #007bff;
     color: #ffffff;
     padding: 20 px;
     background-size: cover;
