@@ -3,7 +3,6 @@ body {
 margin: 0;
 font-family: Arial, sans-serif;
 overflow-x: hidden;
-padding-top: 60 px;
 }
 
 /* CABEÇALHO E RODAPÉ GERAL */
@@ -101,92 +100,149 @@ footer {
 /* ------------------------------------- */
 
 /* PÁGINA INICIAL */
+
+.foto-container {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  background-color: #007bff;
+  justify-content: center; /* Centraliza os itens no eixo principal (horizontal) */
+  align-items: center; /* Centraliza os itens no eixo transversal (vertical) */
+  flex: 1;
+  display: flex;
+}
+
+.foto-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+
+}
+
+.cta-container {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px; /* Adicionado preenchimento para uma aparência mais limpa */
+  background-color: #007bff;
+  flex: 1;
+}
+
+.cta-text {
+  margin-bottom: 20px;
+  color: #ffffff;
+  background-color: #007bff;
+}
+
+.cta-video {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+}
+
 .cta {
-    text-align: center;
-    padding: 20px;
-    color: #ffffff;
-    z-index: 2;
-    background: url('/imagens/higor.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    margin: 0; /* Remove margens adicionais */
-    width: 100%; /* Garante que ocupa toda a largura */
-    }
+  background-color: #007bff;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+}
     
-    /* Media queries para responsividade */
-    @media (max-width: 768px) {
-    .cta h1 {
-    font-size: 3em; /* Tamanho menor para telas pequenas */
-    }
-    .cta button {
-    font-size: 1em; /* Tamanho menor para botão */
-    }
-    /* Outros estilos para dispositivos menores */
-    }
-    
-    @media (max-width: 480px) {
-    /* Estilos específicos para dispositivos muito pequenos, como celulares */
-    }
-    
-    .cta h1 {
-    font-size: 5.0em;
-    font-weight: bold;
-    text-shadow: 5px 5px 5px black;
-    }
-    
-    .cta button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #4CAF50;
-    color: white;
-    border: 2 px solid #0000;
-    cursor: pointer;
-    font-weight: bold;
-    }
+.cta h1 {
+font-size: 3.0em;
+font-weight: bold;
+color: #ffffff;
+background-color: #007bff;
+}
 
-    .botao-cta {
-      display: inline-block;
-      padding: 10px 20px;
-      width: 440px;
-      margin-top: 250px;
-      margin-left: 100px;
-      background-color: #007bff; /* Cor de fundo */
-      color: white; /* Cor do texto */
-      text-decoration: none; /* Remove o sublinhado */
-      border-radius: 5px; /* Bordas arredondadas */
-      box-shadow: 0 4px #0056b3; /* Sombra para efeito 3D */
-      transition: all 0.3s ease; /* Transição suave para o hover */
-  }
-    
-    .botao-cta:hover {
-      background-color: #0056b3; /* Cor de fundo ao passar o mouse */
-      box-shadow: 0 2px #003366; /* Sombra ao passar o mouse */
-      transform: translateY(2px); /* Efeito de pressionamento */
-  }
-    
-    .carousel {
-    text-align: center;
-    overflow: hidden;
-    }
-    
-    .carousel img {
-    max-width: 100%;
-    max-height: 300px;
-    margin-right: 10px;
-    }
-    
-    .carousel-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+.botao-cta {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 440px;
+  background-color: #4caf50; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0 4px #388e3c; /* Sombra para efeito 3D */
+  transition: all 0.3s ease; /* Transição suave para o hover */
+}
 
-    .carousel-text {
-        color: #007bff; /* Cor do texto */
-        text-align: center;
-        font-weight: bold;
-        font-size: 2.5em;
-    }
+.botao-cta:hover {
+  background-color: #003a03; /* Cor de fundo ao passar o mouse */
+  box-shadow: 0 2px #002102; /* Sombra ao passar o mouse */
+  transform: translateY(2px); /* Efeito de pressionamento */
+}
+
+/* REFERÊNCIAS */
+
+.carousel, .superProf {
+width: 50%;
+box-sizing: border-box;
+justify-content: center; /* Centraliza os itens no eixo principal (horizontal) */
+align-items: center; /* Centraliza os itens no eixo transversal (vertical) */
+flex: 1;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.carousel {
+  float: left;
+}
+
+.superProf {
+  float: right;
+}
+
+.carousel img {
+max-width: 150%;
+margin-bottom: 30px;
+}
+
+.carousel-slide {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.carousel-text h1 {
+color: #5D5DEC; /* Cor do texto */
+text-align: center;
+font-weight: bold;
+font-size: 3.0em;
+}
+
+.superProf img {
+  margin-top: 20px;
+  max-width: 65%;
+  margin-bottom: 20px;
+}
+
+.botao-super {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 330px;
+  background-color: #5D5DEC; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0 4px #4747b5; /* Sombra para efeito 3D */
+  transition: all 0.3s ease; /* Transição suave para o hover */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.botao-super:hover {
+  background-color: #383891; /* Cor de fundo ao passar o mouse */
+  box-shadow: 0 2px #282869; /* Sombra ao passar o mouse */
+  transform: translateY(2px); /* Efeito de pressionamento */
+}
 /* --------------------------------------- */
 
 
