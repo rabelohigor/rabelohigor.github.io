@@ -212,7 +212,7 @@ align-items: center;
 }
 
 .carousel-text h1 {
-color: #5D5DEC; /* Cor do texto */
+color: #007bff; /* Cor do texto */
 text-align: center;
 font-weight: bold;
 font-size: 3.0em;
@@ -228,19 +228,19 @@ font-size: 3.0em;
   display: inline-block;
   padding: 10px 20px;
   width: 330px;
-  background-color: #5D5DEC; /* Cor de fundo */
+  background-color: #007bff; /* Cor de fundo */
   color: white; /* Cor do texto */
   text-decoration: none; /* Remove o sublinhado */
   border-radius: 5px; /* Bordas arredondadas */
-  box-shadow: 0 4px #4747b5; /* Sombra para efeito 3D */
+  box-shadow: 0 4px #0053ac; /* Sombra para efeito 3D */
   transition: all 0.3s ease; /* Transição suave para o hover */
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
 .botao-super:hover {
-  background-color: #383891; /* Cor de fundo ao passar o mouse */
-  box-shadow: 0 2px #282869; /* Sombra ao passar o mouse */
+  background-color: #0053ac; /* Cor de fundo ao passar o mouse */
+  box-shadow: 0 2px #003a79; /* Sombra ao passar o mouse */
   transform: translateY(2px); /* Efeito de pressionamento */
 }
 /* --------------------------------------- */
@@ -350,6 +350,37 @@ font-size: 3.0em;
 
 /* ------------------------------------------------- */
 
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Cabeçalho */
+  .logo, .nome {
+      display: none; /* Oculta os elementos no cabeçalho */
+  }
+
+  .hamburger-menu {
+      display: block; /* Mostra o botão hambúrguer */
+      cursor: pointer;
+  }
+
+  nav {
+      display: none; /* Oculta a navegação por padrão */
+      flex-direction: column; /* Organiza os links da navegação verticalmente */
+  }
+
+  nav.active {
+      display: flex; /* Mostra a navegação quando o botão hambúrguer é ativado */
+  }
+
+  /* Rodapé */
+  .footer-left, .footer-right {
+      display: none; /* Oculta elementos no rodapé */
+  }
+
+  .footer-icons {
+      justify-content: center; /* Centraliza os ícones no rodapé */
+      width: 100%; /* Ocupa a largura total do rodapé */
+  }
+}
 
 
 

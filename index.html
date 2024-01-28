@@ -27,6 +27,7 @@
     <div class="nome">
       Higor Rabelo
     </div>
+    <div class="hamburger-menu">☰</div>
     <nav>
     <!--<a href="#portfolio">Portfólio</a>-->
     <a href="#Aulas particulares">Início</a>
@@ -63,7 +64,7 @@
         <img src="/imagens/referencias/gustavo.png" alt="Avalição do Gustavo: Ótimo professor! Didática direta, clara e excepcional.">
         <img src="/imagens/referencias/gabriela.png" alt="Avaliação da Gabriela: Didática muito boa, explica na velocidade do aluno e tem paciência.">
       </div>
-      <a onclick="https://www.superprof.com.br/aulas-reforco-matematica-desperte-genio-existe-voce.html" class="botao-super">Visite meu perfil no Superprof</a>
+      <a onclick="https://www.superprof.com.br/aulas-reforco-matematica-desperte-genio-existe-voce.html" class="botao-super">Confira meu perfil no Superprof</a>
     </div>
     <div class="superProf">
       <img src="/imagens/SuperProf.jpeg" alt="Perfil do professor Higor Rabelo no Superprof.">
@@ -145,6 +146,17 @@
       <span>Apple Teacher</span>
   </div>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger-menu');
+      const nav = document.querySelector('nav');
+
+      hamburger.addEventListener('click', function() {
+          nav.classList.toggle('active');
+      });
+  });
+</script>
 
 </body>
 </html>
